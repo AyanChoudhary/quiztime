@@ -14,10 +14,9 @@
     if ($row['user'] == $username && $row['pass'] == $password )
     {
         header("Location: ../question.php");
+        exit;
     }
-    else
-    {
-        echo "Login failed. Please try again";
-    }
+
+    echo "Login failed. Please try again";
 
 ?>

@@ -5,8 +5,8 @@
     $db_name='quiz';
 
     $query = new mysqli($db_host,$db_username,$db_pass,$db_name);
-    if($query->connect_error) {
-    echo "$query->mysqli_error";
+    if ($query->connect_error) {
+    echo $query->mysqli_error;
         exit();
     }
 ?>
