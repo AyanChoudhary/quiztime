@@ -55,7 +55,7 @@
 			$result = mysqli_query($conn,"SELECT * FROM user WHERE user='admin' and pass= 'admin'");    
 
 			$row = mysqli_fetch_array($result);
-			if ($row['user'] == $_SESSION['username'] && $row['pass'] == $_SESSION['password'] )
+			if ($row['user'] === $_SESSION['username'] && $row['pass'] === $_SESSION['password'] )
 			{
 				?><a href="add.php">Add Questions</a>
 			<?php
