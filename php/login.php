@@ -3,7 +3,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $conn = mysqli_connect("localhost", "root", "Shubham@00", "quiz");
+    $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD,DB_DATABASE);
     $result = mysqli_query($conn,"SELECT * FROM user WHERE user = '$username' and pass='$password'");
     
     
