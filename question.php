@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$conn = mysqli_connect("localhost", "root", "Shubham@00", "quiz");
+	$conn = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	
 ?>
 
